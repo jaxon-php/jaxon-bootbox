@@ -1,6 +1,6 @@
 <?php
 
-class XajaxModal extends \Xajax\Plugin\Response
+class Bootbox extends \Xajax\Plugin\Response
 {
 	public function getName()
 	{
