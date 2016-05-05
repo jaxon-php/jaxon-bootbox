@@ -1,5 +1,7 @@
 <?php
 
+namespace Xajax\Bootbox;
+
 class Bootbox extends \Xajax\Plugin\Response
 {
 	public function getName()
