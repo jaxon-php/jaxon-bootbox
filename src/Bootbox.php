@@ -4,6 +4,8 @@ namespace Xajax\Bootbox;
 
 class Bootbox extends \Xajax\Plugin\Response
 {
+	use \Xajax\Utils\ContainerTrait;
+
 	public function getName()
 	{
 		return 'bootbox';
