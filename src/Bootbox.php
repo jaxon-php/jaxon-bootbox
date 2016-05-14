@@ -15,7 +15,7 @@ class Bootbox extends \Xajax\Plugin\Response
 		return '1.0.0';
 	}
 
-	public function getJsInclude()
+	public function getJs()
  	{
 		if(!$this->getOption('assets.include.all') && !$this->getOption('assets.include.bootbox'))
 		{
@@ -24,7 +24,7 @@ class Bootbox extends \Xajax\Plugin\Response
  		return  '<script type="text/javascript" src="//assets.lagdo-software.net/libs/bootbox/4.3.0/bootbox.min.js"></script>';
  	}
 
-	public function getClientScript()
+	public function getScript()
 	{
 		return '
 xajax.command.handler.register("bootbox", function(args) {
