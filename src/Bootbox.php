@@ -19,7 +19,7 @@ class Bootbox extends \Xajax\Plugin\Response
 
 	public function getJs()
  	{
-		if(!$this->getOption('assets.include.all') && !$this->getOption('assets.include.bootbox'))
+		if(!$this->includeAssets())
 		{
 			return '';
 		}
