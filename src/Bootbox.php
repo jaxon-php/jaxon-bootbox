@@ -35,34 +35,41 @@ xajax.command.handler.register("bootbox", function(args) {
 ';
     }
 
-    protected function alert($title, $content, $class)
+    protected function alert($message, $title, $class)
     {
         $content = '
         <div class="alert alert-' . $class . '" style="margin-top:15px;margin-bottom:-15px;">
+';
+        if(($title))
+        {
+            $content .= '
             <strong>' . $title . '</strong>
-            ' . $content . '
+';
+        }
+        $content .= '
+            ' . $message . '
         </div>
 ';
-        $this->addCommand(array('cmd'=>'bootbox'), array('content' => $content));
+        $this->addCommand(array('cmd' => 'bootbox'), array('content' => $content));
     }
 
-    public function success($title, $content)
+    public function success($message, $title = null)
     {
-        $this->alert($title, $content, 'success');
+        $this->alert($message, $title, 'success');
     }
 
-    public function info($title, $content)
+    public function info($message, $title = null)
     {
-        $this->alert($title, $content, 'info');
+        $this->alert($message, $title, 'info');
     }
 
-    public function warning($title, $content)
+    public function warning($message, $title = null)
     {
-        $this->alert($title, $content, 'warning');
+        $this->alert($message, $title, 'warning');
     }
 
-    public function error($title, $content)
+    public function error($message, $title = null)
     {
-        $this->alert($title, $content, 'danger');
+        $this->alert($message, $title, 'danger');
     }
 }
