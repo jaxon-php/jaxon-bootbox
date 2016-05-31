@@ -38,7 +38,7 @@ Usage
 -----
 
 This example shows how to print a notification.
-```
+```php
 function myFunction()
 {
     $response = new \Xajax\Response\Response();
@@ -54,11 +54,11 @@ function myFunction()
 ```
 
 The `bootbox` attribute of Xajax response provides the following functions.
-```
-public function info($message, $title = null);      //
-public function success($message, $title = null);   //
-public function warning($message, $title = null);   //
-public function error($message, $title = null);     //
+```php
+public function info($message, $title = null);
+public function success($message, $title = null);
+public function warning($message, $title = null);
+public function error($message, $title = null);
 ```
 
 Contribute
