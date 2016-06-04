@@ -1,10 +1,10 @@
 <?php
 
-namespace Xajax\Bootbox;
+namespace Jaxon\Bootbox;
 
-class Bootbox extends \Xajax\Plugin\Response
+class Bootbox extends \Jaxon\Plugin\Response
 {
-    use \Xajax\Utils\ContainerTrait;
+    use \Jaxon\Utils\ContainerTrait;
 
     public function getName()
     {
@@ -29,7 +29,7 @@ class Bootbox extends \Xajax\Plugin\Response
     public function getScript()
     {
         return '
-xajax.command.handler.register("bootbox", function(args) {
+jaxon.command.handler.register("bootbox", function(args) {
     bootbox.alert(args.data.content);
 });
 ';

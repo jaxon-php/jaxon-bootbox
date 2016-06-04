@@ -1,13 +1,13 @@
-Bootbox for Xajax
+Bootbox for Jaxon
 =================
 
-This package implements javascript alert in Xajax applications using the Bootstrap Bootbox library.
+This package implements javascript alert in Jaxon applications using the Bootstrap Bootbox library.
 http://bootboxjs.com.
 
 Features
 --------
 
-- Enrich the Xajax response with alert functions.
+- Enrich the Jaxon response with alert functions.
 - Automatically insert the Js file of the Bootbox library into the HTML page.
 
 Installation
@@ -16,19 +16,19 @@ Installation
 Add the following line in the `composer.json` file.
 ```json
 "require": {
-    "lagdo/xajax-bootbox": "dev-master"
+    "lagdo/jaxon-bootbox": "dev-master"
 }
 ```
 
 Or run the command
 ```bash
-composer require lagdo/xajax-bootbox
+composer require lagdo/jaxon-bootbox
 ```
 
 Configuration
 ------------
 
-By default the plugin loads the version 4.3.0 of Js file from the Xajax website.
+By default the plugin loads the version 4.3.0 of Js file from the Jaxon website.
 
 - assets.lagdo-software.net/libs/bootbox/4.3.0/bootbox.min.js
 
@@ -41,7 +41,7 @@ This example shows how to print a notification.
 ```php
 function myFunction()
 {
-    $response = new \Xajax\Response\Response();
+    $response = new \Jaxon\Response\Response();
 
     // Process the request
     // ...
@@ -53,7 +53,7 @@ function myFunction()
 }
 ```
 
-The `bootbox` attribute of Xajax response provides the following functions.
+The `bootbox` attribute of Jaxon response provides the following functions.
 ```php
 public function info($message, $title = null);
 public function success($message, $title = null);
@@ -64,8 +64,8 @@ public function error($message, $title = null);
 Contribute
 ----------
 
-- Issue Tracker: github.com/lagdo/xajax-bootbox/issues
-- Source Code: github.com/lagdo/xajax-bootbox
+- Issue Tracker: github.com/lagdo/jaxon-bootbox/issues
+- Source Code: github.com/lagdo/jaxon-bootbox
 
 License
 -------
