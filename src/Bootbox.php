@@ -29,7 +29,7 @@ class Bootbox extends \Jaxon\Plugin\Response
     public function getScript()
     {
         return '
-jaxon.command.handler.register("bootbox", function(args) {
+xajax.command.handler.register("bootbox", function(args) {
     bootbox.alert(args.data.content);
 });
 ';
