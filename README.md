@@ -16,13 +16,13 @@ Installation
 Add the following line in the `composer.json` file.
 ```json
 "require": {
-    "lagdo/jaxon-bootbox": "dev-master"
+    "jaxon-php/jaxon-bootbox": "dev-master"
 }
 ```
 
 Or run the command
 ```bash
-composer require lagdo/jaxon-bootbox
+composer require jaxon-php/jaxon-bootbox
 ```
 
 Configuration
@@ -30,7 +30,7 @@ Configuration
 
 By default the plugin loads the version 4.3.0 of Js file from the Jaxon website.
 
-- assets.lagdo-software.net/libs/bootbox/4.3.0/bootbox.min.js
+- packages.jaxon-php.org/libs/bootbox/4.3.0/bootbox.min.js
 
 This can be disabled by setting the `assets.include.bootbox` option to `false`.
 
@@ -64,8 +64,8 @@ public function error($message, $title = null);
 Contribute
 ----------
 
-- Issue Tracker: github.com/lagdo/jaxon-bootbox/issues
-- Source Code: github.com/lagdo/jaxon-bootbox
+- Issue Tracker: github.com/jaxon-php/jaxon-bootbox/issues
+- Source Code: github.com/jaxon-php/jaxon-bootbox
 
 License
 -------

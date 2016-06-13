@@ -1,19 +1,19 @@
 {
-    "name": "lagdo/jaxon-bootbox",
+    "name": "jaxon-php/jaxon-bootbox",
     "type": "library",
     "description": "Javascript Bootbox modal dialog for Jaxon",
     "authors": [
         {"name": "Thierry Feuzeu"}
     ],
-    "homepage": "https://github.com/lagdo/jaxon-bootbox",
+    "homepage": "https://github.com/jaxon-php/jaxon-bootbox",
     "license": "BSD-2-Clause",
     "keywords": ["Jaxon", "Xajax", "Ajax", "PHP", "Javascript", "Bootbox", "Dialog", "Modal"],
     "support": {
-        "issues": "https://github.com/lagdo/jaxon-bootbox/issues",
-        "source": "https://github.com/lagdo/jaxon-bootbox"
+        "issues": "https://github.com/jaxon-php/jaxon-bootbox/issues",
+        "source": "https://github.com/jaxon-php/jaxon-bootbox"
     },
     "require": {
-        "lagdo/jaxon-core": "dev-master"
+        "jaxon-php/jaxon-core": "dev-master"
     },
     "autoload": {
         "psr-4": {

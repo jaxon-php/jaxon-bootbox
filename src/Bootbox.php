@@ -23,7 +23,7 @@ class Bootbox extends \Jaxon\Plugin\Response
         {
             return '';
         }
-         return  '<script type="text/javascript" src="//assets.lagdo-software.net/libs/bootbox/4.3.0/bootbox.min.js"></script>';
+         return  '<script type="text/javascript" src="//packages.jaxon-php.org/libs/bootbox/4.3.0/bootbox.min.js"></script>';
      }
 
     public function getScript()
