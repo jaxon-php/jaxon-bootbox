@@ -30,7 +30,7 @@ Configuration
 
 By default the plugin loads the version 4.3.0 of Js file from the Jaxon website.
 
-- packages.jaxon-php.org/libs/bootbox/4.3.0/bootbox.min.js
+- lib.jaxon-php.org/bootbox/4.3.0/bootbox.min.js
 
 This can be disabled by setting the `assets.include.bootbox` option to `false`.
 
