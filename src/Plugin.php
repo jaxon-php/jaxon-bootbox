@@ -2,7 +2,7 @@
 
 namespace Jaxon\Bootbox;
 
-class Bootbox extends \Jaxon\Plugin\Response
+class Plugin extends \Jaxon\Plugin\Response
 {
     use \Jaxon\Utils\ContainerTrait;
 
