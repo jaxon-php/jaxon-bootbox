@@ -16,7 +16,7 @@ Installation
 Add the following line in the `composer.json` file.
 ```json
 "require": {
-    "jaxon-php/jaxon-bootbox": "dev-master"
+    "jaxon-php/jaxon-bootbox": "1.0.*"
 }
 ```
 
