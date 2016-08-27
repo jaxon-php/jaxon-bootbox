@@ -97,6 +97,11 @@ jaxon.command.handler.register("bootbox", function(args) {
         $this->response()->script("$('#styledModal').modal('show')");
     }
 
+    public function hide()
+    {
+        $this->response()->script("$('#styledModal').modal('hide')");
+    }
+
     protected function alert($message, $title, $class)
     {
         $content = '
@@ -105,7 +110,7 @@ jaxon.command.handler.register("bootbox", function(args) {
         if(($title))
         {
             $content .= '
-            <strong>' . $title . '</strong>
+            <strong>' . $title . '</strong><br/>
 ';
         }
         $content .= '
