@@ -2,7 +2,10 @@
 
 namespace Jaxon\Bootbox;
 
-class Plugin extends \Jaxon\Plugin\Response
+use Jaxon\Plugin\Response;
+use Jaxon\Request\Interfaces\Confirm;
+
+class Plugin extends Response implements Confirm
 {
     use \Jaxon\Utils\ContainerTrait;
 
@@ -14,7 +17,7 @@ class Plugin extends \Jaxon\Plugin\Response
     public function generateHash()
     {
         // The version number is used as hash
-        return '1.0.0';
+        return '1.0.2';
     }
 
     public function getJs()
@@ -138,5 +141,17 @@ jaxon.command.handler.register("bootbox", function(args) {
     public function error($message, $title = null)
     {
         $this->alert($message, $title, 'danger');
+    }
+
+    /**
+     * Get the script which makes a call only if the user answers yes to the given question
+     * 
+     * This is the implementation of the Jaxon\Request\Interfaces\Confirm interface.
+     * 
+     * @return string
+     */
+    public function getScriptWithQuestion($question, $script)
+    {
+        return 'bootbox.confirm("' . addslashes($question) . '",function(res){if(res){' . $script . ';}})';
     }
 }
