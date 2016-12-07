@@ -17,7 +17,7 @@ class Plugin extends Response implements Confirm
     public function generateHash()
     {
         // The version number is used as hash
-        return '1.0.3';
+        return '1.0.4';
     }
 
     public function getJs()
