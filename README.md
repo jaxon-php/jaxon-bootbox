@@ -39,17 +39,18 @@ Usage
 
 This example shows how to print a notification.
 ```php
-function myFunction()
+class HelloWorld
 {
-    $response = new \Jaxon\Response\Response();
+    public function sayHello($text)
+    {
+        $xResponse = new Response();
+        $xResponse->assign('div2', 'innerHTML', $text);
 
-    // Process the request
-    // ...
+        // Print a notification with Bootbox
+        $response->bootbox->success("You did it!!!");
 
-    // Print a notification with Bootbox
-    $response->bootbox->success("You did it!!!");
-
-    return $response;
+        return $xResponse;
+    }
 }
 ```
 
