@@ -17,7 +17,7 @@ class Plugin extends Response implements Confirm
     public function generateHash()
     {
         // The version number is used as hash
-        return '1.0.2';
+        return '1.0.3';
     }
 
     public function getJs()
@@ -26,7 +26,7 @@ class Plugin extends Response implements Confirm
         {
             return '';
         }
-        return '<script type="text/javascript" src="//lib.jaxon-php.org/bootbox/4.3.0/bootbox.min.js"></script>';
+        return '<script type="text/javascript" src="https://lib.jaxon-php.org/bootbox/4.3.0/bootbox.min.js"></script>';
     }
 
     protected function getContainer()
