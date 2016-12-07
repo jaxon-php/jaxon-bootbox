@@ -1,7 +1,7 @@
 Bootbox for Jaxon
 =================
 
-This package implements javascript alert in Jaxon applications using the Bootstrap Bootbox library.
+This package implements javascript alert and confirmation dialogs in Jaxon applications using the Bootstrap Bootbox library.
 http://bootboxjs.com.
 
 Features
@@ -30,7 +30,7 @@ Configuration
 
 By default the plugin loads the version 4.3.0 of Js file from the Jaxon website.
 
-- lib.jaxon-php.org/bootbox/4.3.0/bootbox.min.js
+- https://lib.jaxon-php.org/bootbox/4.3.0/bootbox.min.js
 
 This can be disabled by setting the `assets.include.bootbox` option to `false`.
 
@@ -59,6 +59,11 @@ public function info($message, $title = null);
 public function success($message, $title = null);
 public function warning($message, $title = null);
 public function error($message, $title = null);
+```
+
+This plugin can also be used to add confirmation questions to Jaxon calls.
+```php
+    <button onclick="<?php echo jr::call('HelloWorld.sayHello', jr::html('DemoDiv'))->confirm('Really?') ?>">Click Me</button>
 ```
 
 Contribute
